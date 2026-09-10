@@ -6,13 +6,6 @@
     <div v-else-if="error" class="status error">{{ error }}</div>
 
     <div v-else>
-      <div class="stats-grid">
-        <div class="card">
-          <h3>Total Submissions</h3>
-          <p class="stat-number">{{ surveys.length }}</p>
-        </div>
-      </div>
-
       <h2>Live Entries</h2>
       <table class="data-table">
         <thead>
@@ -30,6 +23,12 @@
           </tr>
         </tbody>
       </table>
+      <div class="stats-grid">
+        <div class="card">
+          <h3>Total Submissions</h3>
+          <p class="stat-number">{{ surveys.length }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
