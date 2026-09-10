@@ -4,6 +4,9 @@ Vue/Vite app for EY-NS leaderboard
 
 ## Project Setup
 
+## Environment 
+Set environment variables in Vercel
+
 ```sh
 npm install
 ```
@@ -23,6 +26,8 @@ npm run build
 ## Deployment
 1. Commit and push to GitHub repo
 2. vercel.com will pick up changes
+
+
 
 
 
