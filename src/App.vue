@@ -59,7 +59,7 @@ const fetchSurveys = async () => {
 }
 
 onMounted(() => {
-  fetchSurveys()
+  setInterval(fetchSurveys, 10000);
 })
 </script>
 
