@@ -11,14 +11,14 @@
         <thead>
           <tr>
             <th>Name</th>
-            <th>Age</th>
+            <th>School</th>
             <th>Favorite Tech</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="item in surveys" :key="item.id">
             <td>{{ item.name }}</td>
-            <td>{{ item.age }}</td>
+            <td>{{ item.school }}</td>
             <td>{{ item.favorite_tech }}</td>
           </tr>
         </tbody>
