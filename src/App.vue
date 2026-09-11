@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <h1>📊 EY Nottingham Spirk Leadboard</h1>
+    <h1>📊 EY Northeast Ohio Teens in Tech Workshop Leadboard</h1>
     
     <div v-if="loading" class="status">Loading response data...</div>
     <div v-else-if="error" class="status error">{{ error }}</div>
@@ -76,6 +76,9 @@ onMounted(() => {
   border-radius: 8px;
   margin-bottom: 2rem;
   width: 200px;
+}
+.stats-grid {
+  margin-top: 20px;
 }
 .stat-number {
   font-size: 2rem;
