@@ -1,6 +1,7 @@
 <template>
   <div class="dashboard">
-    <h1>📊 EY Northeast Ohio Teens in Tech Workshop Leadboard</h1>
+    <h1>📊 EY Northeast Ohio Teens in Tech Workshop</h1>
+    <h2>Leaderboard</h2>
     
     <div v-if="loading" class="status">Loading response data...</div>
     <div v-else-if="error" class="status error">{{ error }}</div>
