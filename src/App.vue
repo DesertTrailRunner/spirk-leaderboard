@@ -2,11 +2,8 @@
   <div class="dashboard">
     <h1>📊 EY Northeast Ohio Teens in Tech Workshop</h1>
     <h2>Leaderboard</h2>
-    
-    <div v-if="loading" class="status">Loading response data...</div>
-    <div v-else-if="error" class="status error">{{ error }}</div>
 
-    <div v-else>
+    <div>
       <h2>Live Entries</h2>
       <table class="data-table">
         <thead>
@@ -32,6 +29,11 @@
       </div>
     </div>
   </div>
+
+  <div v-if="loading" class="status">Loading response data...</div>
+  <div v-else-if="error" class="status error">{{ error }}</div>
+
+
 </template>
 
 <script setup>
@@ -71,6 +73,7 @@ onMounted(() => {
   margin: 2rem auto;
   padding: 1rem;
 }
+
 .card {
   background: #f4f4f5;
   padding: 1rem;
@@ -78,26 +81,33 @@ onMounted(() => {
   margin-bottom: 2rem;
   width: 200px;
 }
+
 .stats-grid {
   margin-top: 20px;
 }
+
 .stat-number {
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
 }
+
 .data-table {
   width: 100%;
   border-collapse: collapse;
 }
-.data-table th, .data-table td {
+
+.data-table th,
+.data-table td {
   border: 1px solid #e4e4e7;
   padding: 0.75rem;
   text-align: left;
 }
+
 .data-table th {
   background-color: #f4f4f5;
 }
+
 .error {
   color: red;
 }
