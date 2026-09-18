@@ -4,7 +4,6 @@
     <h2>Leaderboard</h2>
 
     <div>
-      <h2>Live Entries</h2>
       <table class="data-table">
         <thead>
           <tr>
@@ -110,5 +109,12 @@ onMounted(() => {
 
 .error {
   color: red;
+}
+
+.status {
+  font-family: system-ui, sans-serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 </style>
