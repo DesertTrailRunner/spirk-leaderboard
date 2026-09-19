@@ -29,7 +29,7 @@
     </div>
   </div>
 
-  <div v-if="loading" class="status">Loading response data...</div>
+  <div v-if="loading" class="status">Loading responses...</div>
   <div v-else-if="error" class="status error">{{ error }}</div>
 
 
