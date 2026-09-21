@@ -7,7 +7,7 @@
       <table class="data-table">
         <thead>
           <tr>
-            <th>Name</th>
+            <th>First name</th>
             <th>School</th>
             <th>Favorite Tech</th>
           </tr>
